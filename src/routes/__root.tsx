@@ -91,18 +91,20 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           </header>
 
           <main>{children}</main>
-          <TanStackDevtools
-            config={{
-              position: "bottom-right",
-            }}
-            plugins={[
-              {
-                name: "Tanstack Router",
-                render: <TanStackRouterDevtoolsPanel />,
-              },
-              TanStackQueryDevtools,
-            ]}
-          />
+          {process.env.NODE_ENV === "development" && (
+            <TanStackDevtools
+              config={{
+                position: "bottom-right",
+              }}
+              plugins={[
+                {
+                  name: "Tanstack Router",
+                  render: <TanStackRouterDevtoolsPanel />,
+                },
+                TanStackQueryDevtools,
+              ]}
+            />
+          )}
           <Scripts />
           <footer className="container py-6 flex items-center justify-between">
             <Link to="/">
