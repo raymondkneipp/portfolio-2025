@@ -22,7 +22,7 @@ const config = defineConfig(async ({ mode }) => {
       }),
       tailwindcss(),
       tanstackStart(),
-      nitro()
+      nitro(),
       viteReact(),
     ],
   };
