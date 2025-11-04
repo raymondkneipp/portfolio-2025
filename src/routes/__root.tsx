@@ -106,12 +106,12 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             />
           )}
           <Scripts />
-          <footer className="container py-6 flex items-center justify-between">
+          <footer className="container py-6 flex items-center justify-between gap-x-4 text-balance">
             <Link to="/">
               <Logo />
             </Link>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground text-right">
               © {new Date().getFullYear()} Raymond Kneipp. All rights reserved.
             </p>
           </footer>
