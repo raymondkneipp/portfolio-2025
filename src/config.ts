@@ -56,7 +56,7 @@ export const config: Config = {
   lastName: "Kneipp",
   headline: "Full Stack Software Engineer",
   professionalSummary:
-    "Software developer with 8+ years of programming experience, beginning in middle school. Marine Corps veteran with strong discipline and collaborative skills. Currently developing a website builder platform for American Legion posts to improve their digital presence and member engagement. Passionate about continuous learning and problem-solving through code.",
+    "Software developer with 8+ years of programming experience. Marine Corps veteran with strong discipline and collaborative skills. Currently developing a website builder platform for American Legion posts to improve their digital presence and member engagement. Passionate about continuous learning and problem-solving through code.",
   location: "Cincinnati, OH",
 
   socials: {
