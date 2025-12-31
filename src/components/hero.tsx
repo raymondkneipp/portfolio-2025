@@ -1,5 +1,7 @@
 import { config } from "@/config";
 import { Anchor } from "@/components/ui/anchor";
+import { Badge } from "./ui/badge";
+import { MapPinIcon } from "lucide-react";
 
 type HeroProps = {
   email: string;
@@ -10,6 +12,11 @@ export function Hero({ email }: HeroProps) {
 
   return (
     <section className="py-20 container">
+      <Badge variant="outline" className="mb-4">
+        <MapPinIcon />
+        {config.location}
+      </Badge>
+
       <h1 className="text-6xl md:text-7xl font-black text-foreground tracking-tighter mb-6">
         {config.firstName} {config.lastName}
       </h1>
