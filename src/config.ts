@@ -392,7 +392,7 @@ export const config: Config = {
       endDate: "Present",
       bullets: [
         "Founded and developed SaaS platform enabling American Legion Posts to create mobile-friendly websites",
-        "Successfully onboarded 13 paying organizations through targeted outreach to 90+ American Legion Posts, generating revenue",
+        "Successfully onboarded 17 paying organizations through targeted outreach to 90+ American Legion Posts, generating revenue",
         "Established official partnership with American Legion Headquarters for brand alignment and policy compliance",
         "Built end-to-end multi-tenant platform using Next.js, React, TypeScript, Prisma, Stripe, and tRPC with Vercel and Cloudflare R2 infrastructure, implementing CI/CD pipeline via GitHub Actions",
       ],
