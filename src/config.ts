@@ -2,8 +2,7 @@ import { DatabaseIcon } from "lucide-react";
 import { DEFAULT_CONFIG } from "scripts/screenshot-generator/src/config";
 import type { Project } from "scripts/screenshot-generator/src/types";
 import { AwsIcon } from "./components/icons/aws-icon";
-import { GitIcon } from "./components/icons/git-icon";
-import { LinearIcon } from "./components/icons/linear-icon";
+import { DrizzleOrmIcon } from "./components/icons/drizzle-orm";
 import { NextjsIcon } from "./components/icons/nextjs-icon";
 import { NodeJsIcon } from "./components/icons/node-js-icon";
 import { PrismaIcon } from "./components/icons/prisma-icon";
@@ -12,7 +11,6 @@ import { StripeIcon } from "./components/icons/stripe-icon";
 import { TailwindcssIcon } from "./components/icons/tailwindcss-icon";
 import { TrpcIcon } from "./components/icons/trpc-icon";
 import { TypescriptIcon } from "./components/icons/typescript-icon";
-import { ZodIcon } from "./components/icons/zod-icon";
 
 interface Config {
 	firstName: string;
@@ -46,8 +44,11 @@ interface Config {
 	}[];
 
 	skills: {
-		name: string;
-		icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+		group: string;
+		items: {
+			name: string;
+			icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+		}[];
 	}[];
 }
 
@@ -56,7 +57,7 @@ export const config: Config = {
 	lastName: "Kneipp",
 	headline: "Full Stack Software Engineer",
 	professionalSummary:
-		"Software developer with 8+ years of programming experience. Marine Corps veteran with strong discipline and collaborative skills. Currently developing a website builder platform for American Legion posts to improve their digital presence and member engagement. Passionate about continuous learning and problem-solving through code.",
+		"Software developer with 8+ years of programming experience. Marine Corps veteran with strong discipline and collaborative skills. Currently developing a website builder platform for American Legion posts to improve their digital presence and member engagement. Deep expertise across frontend and backend, with a track record of leading technical teams, building products end to end, and shipping under real constraints.",
 	location: "Cincinnati, OH",
 
 	socials: {
@@ -375,10 +376,9 @@ export const config: Config = {
 			startDate: new Date("2022-06-01"),
 			endDate: "Present",
 			bullets: [
-				"Founded and developed SaaS platform enabling American Legion Posts to create mobile-friendly websites",
-				"Successfully onboarded 19 paying organizations through targeted outreach to 90+ American Legion Posts, generating revenue",
-				"Established official partnership with American Legion Headquarters for brand alignment and policy compliance",
-				"Built end-to-end multi-tenant platform using Next.js, React, TypeScript, Prisma, Stripe, and tRPC with Vercel and Cloudflare R2 infrastructure, implementing CI/CD pipeline via GitHub Actions",
+				"Took ALPost from zero to market, converted 19 of 90+ outreached American Legion Posts into paying customers (~21% close rate) and secured an official partnership with American Legion Headquarters",
+				"Frontend: Built a multi-tenant website builder using Next.js, React, and TypeScript, enabling posts to manage mobile-friendly public-facing sites without technical knowledge",
+				"Backend: Engineered API and data layer with tRPC, Prisma, and PostgreSQL; integrated Stripe for subscription billing; deployed on Vercel with Cloudflare R2 storage and GitHub Actions CI/CD",
 			],
 		},
 		{
@@ -389,12 +389,10 @@ export const config: Config = {
 			startDate: new Date("2023-06-01"),
 			endDate: new Date("2025-05-01"),
 			bullets: [
-				"Led technical interview process for 20+ candidates and provided mentorship to junior developers, accelerating team growth and knowledge sharing",
-				"Developed application rewrite with Server-Side Rendering (SSR) capabilities using React Router and migrated to Vite build system, achieving 3x faster development builds and improved SEO",
-				"Architected and developed coach marketplace featuring advanced filtering capabilities and paginated search results, creating new revenue stream through commission model",
-				"Resolved complex calendar synchronization bug affecting coach-client appointment management, preventing revenue loss from missed sessions",
-				"Led codebase modernization and accessibility audit initiatives, addressing technical debt and ensuring WCAG compliance across the platform",
-				"Built AWS infrastructure using Lambda functions, Aurora MySQL, and CloudFormation for backend architecture",
+				"Designed and iterated a structured technical interview process across 3 intern cohorts, evaluating 8–12 candidates per round; mentored interns through onboarding and day-to-day engineering work",
+				"Frontend: Led SSR rewrite using React Router and Vite, achieving 3x faster builds and improved SEO; built a coach marketplace with advanced filtering and paginated search, creating a new commission-based revenue stream",
+				"Backend: Provisioned AWS infrastructure with Lambda, Aurora MySQL, and CloudFormation; resolved a calendar sync bug affecting appointment management and preventing ongoing revenue loss",
+				"Collaborated directly with the product manager and designer to scope and ship features, translating specs and business requirements into engineering deliverables",
 			],
 		},
 		{
@@ -405,20 +403,20 @@ export const config: Config = {
 			endDate: new Date("2025-05-01"),
 			bullets: [
 				"Awarded Navy Achievement Medal (2021, 2024) for maintaining satellite communications systems enabling 1,800+ hours of connectivity, saving $27,000+ in generator repairs, and leading site establishment during multiple exercises across different bases in Bahrain, ensuring 100% operational readiness",
+				"Served as Lead Software Developer at Zoee through a military deployment, continuing to deliver production software, demonstrating reliability and self-management across concurrent full-time responsibilities",
 				"Devised standardized deployment templates and developed infrastructure establishment plans, reducing setup time to 72 hours",
 			],
 		},
 		{
-			company: "Freelance",
+			company: "Self-Employed",
 			url: "",
-			location: "Various Clients (Remote)",
-			position: "Software Developer",
+			location: "Cincinnati, OH",
+			position: "Freelance Software Developer",
 			startDate: new Date("2014-01-01"),
-			endDate: new Date("2022-01-01"),
+			endDate: new Date("2020-01-01"),
 			bullets: [
-				"Developed full-stack web applications and e-commerce platforms using React, Next.js, TypeScript, Node.js, and the LAMP stack.",
-				"Created brand identities and responsive, mobile-first designs for diverse clients.",
-				"Built inventory management systems, client dashboards, and lead-generation tools that modernized legacy applications using SSR, TailwindCSS, and Redux Toolkit.",
+				"Shipped 8+ client projects including e-commerce stores, lead-generation sites, and internal dashboards using React, Next.js, TypeScript, and Node.js",
+				"Modernized legacy LAMP stack applications with SSR and responsive, mobile-first designs for small businesses across multiple industries",
 			],
 		},
 	],
@@ -434,22 +432,34 @@ export const config: Config = {
 			degree: "Full Stack Developer Bootcamp",
 			endDate: new Date("2023-06-01"),
 		},
+		// {
+		// 	institution: "Linux Professional Institute",
+		// 	degree: "Linux Essentials Certification",
+		// 	endDate: new Date("2026-02-03"),
+		// },
 	],
 
 	skills: [
-		{ name: "React", icon: ReactIcon },
-		{ name: "Next.js", icon: NextjsIcon },
-		{ name: "TypeScript", icon: TypescriptIcon },
-		{ name: "TailwindCSS", icon: TailwindcssIcon },
-		{ name: "tRPC", icon: TrpcIcon },
-		{ name: "Zod", icon: ZodIcon },
-		{ name: "Node.js", icon: NodeJsIcon },
-		{ name: "Prisma", icon: PrismaIcon },
-		{ name: "SQL", icon: DatabaseIcon },
-		{ name: "PostgreSQL", icon: DatabaseIcon },
-		{ name: "AWS", icon: AwsIcon },
-		{ name: "Git", icon: GitIcon },
-		{ name: "Stripe", icon: StripeIcon },
-		{ name: "Linear", icon: LinearIcon },
+		{
+			group: "Frontend",
+			items: [
+				{ name: "TypeScript", icon: TypescriptIcon },
+				{ name: "React", icon: ReactIcon },
+				{ name: "Next.js", icon: NextjsIcon },
+				{ name: "TailwindCSS", icon: TailwindcssIcon },
+			],
+		},
+		{
+			group: "Backend",
+			items: [
+				{ name: "Node.js", icon: NodeJsIcon },
+				{ name: "tRPC", icon: TrpcIcon },
+				{ name: "PostgreSQL", icon: DatabaseIcon },
+				{ name: "Prisma", icon: PrismaIcon },
+				{ name: "Drizzle ORM", icon: DrizzleOrmIcon },
+				{ name: "Stripe", icon: StripeIcon },
+				{ name: "AWS", icon: AwsIcon },
+			],
+		},
 	],
 };

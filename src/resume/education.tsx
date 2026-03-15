@@ -16,16 +16,10 @@ export function Education() {
         Education
       </Text>
 
-      {config.education.map((education, index) => (
-        <View
-          key={index}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: 5,
-          }}
-        >
+      <View style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+        {config.education.map((education, index) => (
           <View
+            key={index}
             style={{
               display: "flex",
               flexDirection: "row",
@@ -35,9 +29,7 @@ export function Education() {
             }}
           >
             <View style={{ display: "flex", flexDirection: "row", gap: 3 }}>
-              <Text style={{ fontWeight: "bold" }}>
-                {education.institution}
-              </Text>
+              <Text style={{ fontWeight: "bold" }}>{education.institution}</Text>
               <Separator />
               <Text>{education.degree}</Text>
             </View>
@@ -47,8 +39,8 @@ export function Education() {
               {dateFormatter.format(education.endDate)}
             </Text>
           </View>
-        </View>
-      ))}
+        ))}
+      </View>
     </>
   );
 }
