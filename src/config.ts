@@ -446,6 +446,7 @@ export const config: Config = {
 		{ name: "Node.js", icon: NodeJsIcon },
 		{ name: "Prisma", icon: PrismaIcon },
 		{ name: "SQL", icon: DatabaseIcon },
+		{ name: "PostgreSQL", icon: DatabaseIcon },
 		{ name: "AWS", icon: AwsIcon },
 		{ name: "Git", icon: GitIcon },
 		{ name: "Stripe", icon: StripeIcon },
