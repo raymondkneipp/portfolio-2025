@@ -29,7 +29,7 @@ export function MyResume({ email, phone, phoneRaw }: MyResumeProps) {
 				<View
 					style={{
 						flexGrow: 1,
-						marginTop: "1in",
+						marginTop: "0.75in",
 						marginHorizontal: "1in",
 						marginBottom: "1in",
 						display: "flex",

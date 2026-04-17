@@ -14,7 +14,11 @@ export function WorkExperience() {
 			{config.workExperience.map((experience) => (
 				<article key={experience.company} className="flex flex-col gap-4 mb-8">
 					<h3 className="text-xl font-bold">
-						{experience.position} | {experience.company}
+						{experience.position}
+						<span className="font-normal text-foreground/80">
+							{" "}
+							| {experience.company}
+						</span>
 					</h3>
 
 					{experience.url && (

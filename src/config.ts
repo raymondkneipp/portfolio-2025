@@ -372,13 +372,14 @@ export const config: Config = {
 			company: "ALPost",
 			url: "https://alpost.org",
 			location: "Cincinnati, OH (Remote)",
-			position: "Founder and Software Developer",
+			position: "Founder & Software Engineer",
 			startDate: new Date("2022-06-01"),
 			endDate: "Present",
 			bullets: [
-				"Took ALPost from zero to market, converted 19 of 90+ outreached American Legion Posts into paying customers (~21% close rate) and secured an official partnership with American Legion Headquarters",
-				"Frontend: Built a multi-tenant website builder using Next.js, React, and TypeScript, enabling posts to manage mobile-friendly public-facing sites without technical knowledge",
-				"Backend: Engineered API and data layer with tRPC, Prisma, and PostgreSQL; integrated Stripe for subscription billing; deployed on Vercel with Cloudflare R2 storage and GitHub Actions CI/CD",
+				"Founded and shipped a B2B SaaS platform for American Legion Posts, growing to 21 paying customers ($315 MRR, $5,256 total revenue) across 151 registered organizations, and securing an official partnership with American Legion Headquarters",
+				"Built a multi-tenant website builder in Next.js, React, and TypeScript, enabling non-technical post commanders to manage mobile-responsive public sites with per-organization data isolation",
+				"Engineered full-stack system using tRPC, Prisma, PostgreSQL, integrating Stripe billing, Cloudflare R2 storage, magic-link authentication, and deploying via Vercel + GitHub Actions CI/CD",
+				"Drove a 13.9% trial-to-paid conversion rate through direct outreach to 90+ posts and self-serve onboarding flows optimized for low-tech users",
 			],
 		},
 		{
@@ -404,14 +405,13 @@ export const config: Config = {
 			bullets: [
 				"Awarded Navy Achievement Medal (2021, 2024) for maintaining satellite communications systems enabling 1,800+ hours of connectivity, saving $27,000+ in generator repairs, and leading site establishment during multiple exercises across different bases in Bahrain, ensuring 100% operational readiness",
 				"Served as Lead Software Developer at Zoee through a military deployment, continuing to deliver production software, demonstrating reliability and self-management across concurrent full-time responsibilities",
-				"Devised standardized deployment templates and developed infrastructure establishment plans, reducing setup time to 72 hours",
 			],
 		},
 		{
-			company: "Self-Employed",
+			company: "RK Web (Self-Employed)",
 			url: "",
 			location: "Cincinnati, OH",
-			position: "Freelance Software Developer",
+			position: "Full-Stack Software Developer",
 			startDate: new Date("2014-01-01"),
 			endDate: new Date("2020-01-01"),
 			bullets: [
