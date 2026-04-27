@@ -68,6 +68,74 @@ export const config: Config = {
 
 	projects: [
 		{
+			name: "Money Map",
+			liveUrl: "https://money-map-application.vercel.app/",
+			codeUrl: "https://github.com/raymondkneipp/money-map",
+			description:
+				"Map income, expenses, assets, and debt as nodes on a canvas. Wire them up, tweak assumptions, and watch your net worth, stats, and retirement projections update in real time.",
+			technologies: [
+				"React",
+				"Tanstack Start",
+				"TypeScript",
+				"React Flow / xyflow",
+				"Recharts",
+				"Vitest",
+				"Biome",
+				"Tailwind CSS",
+			],
+			imagesConfig: {
+				themeColor: "#6e10b0",
+			},
+			screenshots: [
+				"https://money-map-application.vercel.app/",
+				"https://money-map-application.vercel.app/app",
+				{
+					url: "https://money-map-application.vercel.app/app/stats",
+					steps: [{ type: "wait", duration: 1500 }],
+				},
+				{
+					url: "https://money-map-application.vercel.app/app/projections",
+					steps: [{ type: "wait", duration: 1500 }],
+				},
+			],
+			coverImage: {
+				columnAngle: -10,
+				screenshots: [
+					{
+						url: "https://money-map-application.vercel.app/",
+						crop: {
+							x: 0,
+							y: 0,
+							width: DEFAULT_CONFIG.viewport.width,
+							height: DEFAULT_CONFIG.viewport.height,
+						},
+					},
+					"https://money-map-application.vercel.app/app",
+					{
+						url: "https://money-map-application.vercel.app/app/stats",
+						steps: [{ type: "wait", duration: 1500 }],
+						crop: {
+							x: 0,
+							y: 0,
+							width: DEFAULT_CONFIG.viewport.width,
+							height: DEFAULT_CONFIG.viewport.height,
+						},
+					},
+					{
+						url: "https://money-map-application.vercel.app/app/projections",
+						steps: [{ type: "wait", duration: 1500 }],
+						crop: {
+							x: 0,
+							y: 0,
+							width: DEFAULT_CONFIG.viewport.width,
+							height: DEFAULT_CONFIG.viewport.height,
+						},
+					},
+				],
+			},
+		},
+
+		{
 			name: "ALPost",
 			liveUrl: "https://alpost.org",
 			description:
