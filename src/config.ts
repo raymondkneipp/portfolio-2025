@@ -136,6 +136,74 @@ export const config: Config = {
 		},
 
 		{
+			name: "Routinely",
+			liveUrl: "https://routinely.raymond-f-kneipp.workers.dev/",
+			codeUrl: "https://github.com/raymondkneipp/routinely",
+			description:
+				"Habits + todos app on TanStack Start + Cloudflare Workers + D1. Lexorank drag-and-drop, timezone-aware streaks, Terraform-managed infra.",
+			technologies: [
+				"Terraform",
+				"React",
+				"Tanstack Start",
+				"TypeScript",
+				"Cloudflare",
+				"SQLite",
+				"Drizzle ORM",
+				"Vitest",
+				"Biome",
+				"Tailwind CSS",
+			],
+			imagesConfig: {
+				themeColor: "#bb4d00",
+			},
+			screenshots: [
+				"https://routinely.raymond-f-kneipp.workers.dev/",
+				{
+					url: "https://routinely.raymond-f-kneipp.workers.dev/login",
+					steps: [
+						{
+							type: "type",
+							selector: "#Email",
+							text: "",
+						},
+						{ type: "type", selector: "#Password", text: "" },
+						{ type: "click", selector: "button[type=submit]" },
+						{ type: "wait", duration: 3000 },
+					],
+				},
+			],
+			coverImage: {
+				columnAngle: 0,
+				screenshots: [
+					{
+						url: "https://routinely.raymond-f-kneipp.workers.dev/",
+						crop: {
+							x: 0,
+							y: 0,
+							width: DEFAULT_CONFIG.viewport.width,
+							height: DEFAULT_CONFIG.viewport.height * 2,
+						},
+					},
+					"https://routinely.raymond-f-kneipp.workers.dev/",
+					{
+						url: "https://routinely.raymond-f-kneipp.workers.dev/login",
+						steps: [
+							{
+								type: "type",
+								selector: "#Email",
+								text: "",
+							},
+							{ type: "type", selector: "#Password", text: "" },
+							{ type: "click", selector: "button[type=submit]" },
+							{ type: "wait", duration: 3000 },
+						],
+					},
+					"https://routinely.raymond-f-kneipp.workers.dev/",
+				],
+			},
+		},
+
+		{
 			name: "ALPost",
 			liveUrl: "https://alpost.org",
 			description:
