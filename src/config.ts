@@ -68,6 +68,52 @@ export const config: Config = {
 
 	projects: [
 		{
+			name: "The Watcher",
+			liveUrl: "https://the-watcher-wheat.vercel.app/",
+			codeUrl: "https://github.com/raymondkneipp/the-watcher",
+			description:
+				"A browser-based horror game. You explore a haunted house with a flashlight while a stalker hunts you. Built as a single HTML file with vanilla JavaScript — no build step, no dependencies.",
+			technologies: [
+				"JavaScript",
+				"HTML5 Canvas",
+				"Web Audio API",
+				"Raycasting",
+				"Claude Code",
+				"Agentic Development",
+			],
+
+			imagesConfig: {
+				themeColor: "#b02020",
+			},
+			screenshots: [
+				"https://the-watcher-wheat.vercel.app/",
+				{
+					url: "https://the-watcher-wheat.vercel.app/",
+					steps: [{ type: "click", selector: "body" }],
+				},
+			],
+			coverImage: {
+				columnAngle: 10,
+				columns: 2,
+				screenshots: [
+					{
+						url: "https://the-watcher-wheat.vercel.app/",
+					},
+					{
+						url: "https://the-watcher-wheat.vercel.app/",
+						steps: [{ type: "click", selector: "body" }],
+					},
+					{
+						url: "https://the-watcher-wheat.vercel.app/",
+						steps: [{ type: "click", selector: "body" }],
+					},
+					{
+						url: "https://the-watcher-wheat.vercel.app/",
+					},
+				],
+			},
+		},
+		{
 			name: "Money Map",
 			liveUrl: "https://money-map-application.vercel.app/",
 			codeUrl: "https://github.com/raymondkneipp/money-map",
