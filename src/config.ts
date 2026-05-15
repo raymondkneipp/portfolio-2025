@@ -574,7 +574,7 @@ export const config: Config = {
 			bullets: [
 				"Designed and iterated a structured technical interview process across 3 intern cohorts, evaluating 8–12 candidates per round; mentored interns through onboarding and day-to-day engineering work",
 				"Frontend: Led SSR rewrite using React Router and Vite, achieving 3x faster builds and improved SEO; built a coach marketplace with advanced filtering and paginated search, creating a new commission-based revenue stream",
-				"Backend: Provisioned AWS infrastructure with Lambda, Aurora MySQL, and CloudFormation; resolved a calendar sync bug affecting appointment management and preventing ongoing revenue loss",
+				"Backend: Developed Python backend services and AWS infrastructure using Lambda, Aurora MySQL, and CloudFormation; resolved a calendar sync bug affecting appointment management and preventing ongoing revenue loss",
 				"Collaborated directly with the product manager and designer to scope and ship features, translating specs and business requirements into engineering deliverables",
 			],
 		},
