@@ -105,7 +105,7 @@ export const config: Config = {
 				},
 			],
 			coverImage: {
-				columnAngle: 0,
+				columnAngle: 5,
 				screenshots: [
 					"https://ray.versume.app",
 					"https://ray.versume.app",
