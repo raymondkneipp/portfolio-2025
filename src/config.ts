@@ -107,18 +107,9 @@ export const config: Config = {
 			coverImage: {
 				columnAngle: 0,
 				screenshots: [
-					{
-						url: "https://ray.versume.app",
-						crop: { x: 0, y: 0, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
-					},
-					{
-						url: "https://ray.versume.app",
-						crop: { x: 0, y: 2524, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
-					},
-					{
-						url: "https://ray.versume.app",
-						crop: { x: 0, y: 5378, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
-					},
+					"https://ray.versume.app",
+					"https://ray.versume.app",
+					"https://ray.versume.app",
 				],
 			},
 		},
