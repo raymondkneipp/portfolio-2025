@@ -558,7 +558,7 @@ export const config: Config = {
 			startDate: new Date("2022-06-01"),
 			endDate: "Present",
 			bullets: [
-				"Founded and shipped a B2B SaaS platform for American Legion Posts, growing to 21 paying customers ($315 MRR, $5,256 total revenue) across 151 registered organizations, and securing an official partnership with American Legion Headquarters",
+				"Founded and shipped a B2B SaaS platform for American Legion Posts, growing to 23 paying customers ($315 MRR, $5,256 total revenue) across 151 registered organizations, and securing an official partnership with American Legion Headquarters",
 				"Built a multi-tenant website builder in Next.js, React, and TypeScript, enabling non-technical post commanders to manage mobile-responsive public sites with per-organization data isolation",
 				"Engineered full-stack system using tRPC, Prisma, PostgreSQL, integrating Stripe billing, Cloudflare R2 storage, magic-link authentication, and deploying via Vercel + GitHub Actions CI/CD",
 				"Drove a 13.9% trial-to-paid conversion rate through direct outreach to 90+ posts and self-serve onboarding flows optimized for low-tech users",
