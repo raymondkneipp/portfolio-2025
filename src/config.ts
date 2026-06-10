@@ -85,6 +85,7 @@ export const config: Config = {
 				"Turborepo",
 				"Anthropic Claude API",
 				"Cloudflare Workers",
+				"Terraform",
 			],
 			imagesConfig: {
 				themeColor: "#059669",
