@@ -68,6 +68,34 @@ export const config: Config = {
 
 	projects: [
 		{
+			name: "Versume",
+			liveUrl: "https://versume.app",
+			codeUrl: "https://github.com/raymondkneipp/versume",
+			description:
+				"An AI-native job search operating system that transforms career history into tailored resumes, cover letters, and employer-specific portfolio sites. Centralizes job tracking, emails, and interviews in a unified timeline.",
+			technologies: [
+				"TypeScript",
+				"React",
+				"TanStack Start",
+				"Tailwind CSS v4",
+				"Drizzle ORM",
+				"SQLite",
+				"Better Auth",
+				"Zod",
+				"Turborepo",
+				"Anthropic Claude API",
+				"Cloudflare Workers",
+			],
+			imagesConfig: {
+				themeColor: "#6366f1",
+			},
+			screenshots: ["https://versume.app"],
+			coverImage: {
+				columnAngle: 0,
+				screenshots: ["https://versume.app"],
+			},
+		},
+		{
 			name: "The Watcher",
 			liveUrl: "https://the-watcher-wheat.vercel.app/",
 			codeUrl: "https://github.com/raymondkneipp/the-watcher",
