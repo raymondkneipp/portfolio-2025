@@ -70,7 +70,6 @@ export const config: Config = {
 		{
 			name: "Versume",
 			liveUrl: "https://versume.app",
-			codeUrl: "https://github.com/raymondkneipp/versume",
 			description:
 				"An AI-native job search operating system that transforms career history into tailored resumes, cover letters, and employer-specific portfolio sites. Centralizes job tracking, emails, and interviews in a unified timeline.",
 			technologies: [
