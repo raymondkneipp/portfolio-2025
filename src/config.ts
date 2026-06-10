@@ -89,10 +89,20 @@ export const config: Config = {
 			imagesConfig: {
 				themeColor: "#6366f1",
 			},
-			screenshots: ["https://versume.app"],
+			screenshots: [
+				"https://ray.versume.app",
+				"https://ray.versume.app#projects",
+				"https://ray.versume.app#skills",
+				"https://ray.versume.app/resume",
+			],
 			coverImage: {
 				columnAngle: 0,
-				screenshots: ["https://versume.app"],
+				screenshots: [
+					"https://ray.versume.app",
+					"https://ray.versume.app#projects",
+					"https://ray.versume.app#skills",
+					"https://ray.versume.app/resume",
+				],
 			},
 		},
 		{
