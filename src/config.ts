@@ -68,6 +68,51 @@ export const config: Config = {
 
 	projects: [
 		{
+			name: "Versume",
+			liveUrl: "https://versume.app",
+			description:
+				"An AI-native job search operating system that transforms career history into tailored resumes, cover letters, and employer-specific portfolio sites. Centralizes job tracking, emails, and interviews in a unified timeline.",
+			technologies: [
+				"TypeScript",
+				"React",
+				"TanStack Start",
+				"Tailwind CSS v4",
+				"Drizzle ORM",
+				"SQLite",
+				"Better Auth",
+				"Zod",
+				"Turborepo",
+				"Anthropic Claude API",
+				"Cloudflare Workers",
+				"Terraform",
+			],
+			imagesConfig: {
+				themeColor: "#059669",
+			},
+			screenshots: [
+				{
+					url: "https://ray.versume.app",
+					crop: { x: 0, y: 0, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+				},
+				{
+					url: "https://ray.versume.app",
+					crop: { x: 0, y: 2524, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+				},
+				{
+					url: "https://ray.versume.app",
+					crop: { x: 0, y: 5378, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+				},
+			],
+			coverImage: {
+				columnAngle: 5,
+				screenshots: [
+					"https://ray.versume.app",
+					"https://ray.versume.app",
+					"https://ray.versume.app",
+				],
+			},
+		},
+		{
 			name: "The Watcher",
 			liveUrl: "https://the-watcher-wheat.vercel.app/",
 			codeUrl: "https://github.com/raymondkneipp/the-watcher",
