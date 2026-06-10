@@ -90,18 +90,34 @@ export const config: Config = {
 				themeColor: "#6366f1",
 			},
 			screenshots: [
-				"https://ray.versume.app",
-				"https://ray.versume.app#projects",
-				"https://ray.versume.app#skills",
-				"https://ray.versume.app/resume",
+				{
+					url: "https://ray.versume.app",
+					crop: { x: 0, y: 0, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+				},
+				{
+					url: "https://ray.versume.app",
+					crop: { x: 0, y: 2524, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+				},
+				{
+					url: "https://ray.versume.app",
+					crop: { x: 0, y: 5378, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+				},
 			],
 			coverImage: {
 				columnAngle: 0,
 				screenshots: [
-					"https://ray.versume.app",
-					"https://ray.versume.app#projects",
-					"https://ray.versume.app#skills",
-					"https://ray.versume.app/resume",
+					{
+						url: "https://ray.versume.app",
+						crop: { x: 0, y: 0, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+					},
+					{
+						url: "https://ray.versume.app",
+						crop: { x: 0, y: 2524, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+					},
+					{
+						url: "https://ray.versume.app",
+						crop: { x: 0, y: 5378, width: DEFAULT_CONFIG.viewport.width, height: DEFAULT_CONFIG.viewport.height },
+					},
 				],
 			},
 		},
