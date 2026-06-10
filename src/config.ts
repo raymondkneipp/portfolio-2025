@@ -87,7 +87,7 @@ export const config: Config = {
 				"Cloudflare Workers",
 			],
 			imagesConfig: {
-				themeColor: "#6366f1",
+				themeColor: "#059669",
 			},
 			screenshots: [
 				{
